@@ -2,7 +2,7 @@ version: '2'
 
 services:
  v2ray:
-    image: rico93/v2ray_v3:go
+    image: sjtuross/v2ray_v3:go
     restart: always
     network_mode: "host"
     environment:
@@ -11,7 +11,7 @@ services:
       speedtest: 6
       node_id: 10
       api_port: 2333
-      downWithPanel: 1
+      downWithPanel: 0
       TZ: "Asia/Shanghai"
     volumes:
       - /etc/localtime:/etc/localtime:ro
