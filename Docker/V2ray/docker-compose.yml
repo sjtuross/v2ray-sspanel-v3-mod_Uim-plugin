@@ -2,7 +2,7 @@ version: '2'
 
 services:
  v2ray:
-    image: sjtuross/v2ray_v3:go
+    image: sjtuross/v2ray_v3:latest
     restart: always
     network_mode: "host"
     environment:
